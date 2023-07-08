@@ -18,8 +18,8 @@ A counter variable count is initialized to keep track of the number of compariso
 The code enters a while loop that continues until the leftmost index is less than or equal to the rightmost index.
 Inside the loop, the midpoint index (mid) is calculated as the average of the leftmost and rightmost indices.
 The target string (val) is compared to the string at the midpoint index using the compareTo method, and the result is stored in the com variable.
-The count variable is incremented to keep track of the number of comparisons made.
 
+The count variable is incremented to keep track of the number of comparisons made.
 If the result of the comparison (com) is 0, it means the target string is found at the midpoint index. The method prints the index, the word, and the number of tries, and then the loop is terminated using break.
 If the result of the comparison (com) is positive, it means the target string is greater than the string at the midpoint index, and the search continues in the right half of the array by updating the leftmost index (lMax).
 If the result of the comparison (com) is negative, it means the target string is smaller than the string at the midpoint index, and the search continues in the left half of the array by updating the rightmost index (rMax).
