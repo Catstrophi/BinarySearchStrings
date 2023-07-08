@@ -21,6 +21,9 @@ The target string (val) is compared to the string at the midpoint index using th
 
 The count variable is incremented to keep track of the number of comparisons made.
 If the result of the comparison (com) is 0, it means the target string is found at the midpoint index. The method prints the index, the word, and the number of tries, and then the loop is terminated using break.
+
 If the result of the comparison (com) is positive, it means the target string is greater than the string at the midpoint index, and the search continues in the right half of the array by updating the leftmost index (lMax).
+
 If the result of the comparison (com) is negative, it means the target string is smaller than the string at the midpoint index, and the search continues in the left half of the array by updating the rightmost index (rMax).
+
 If the leftmost index becomes greater than the rightmost index, it means the target string is not found in the array. The method prints a message indicating that the word is not in the list, along with the number of tries.
